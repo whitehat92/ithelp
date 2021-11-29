@@ -1,0 +1,7 @@
+sed "s/^.*\= \"//g" | sed "s/\";$//g"
+
+
+
+
+on s/^.*\= \"//g, it was until an equal sign and "
+on s/\";$//g, it was the " at the end and ;
