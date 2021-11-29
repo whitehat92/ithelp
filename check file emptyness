@@ -1,0 +1,24 @@
+test.txt = 1,2,3,4,5
+
+[ ! -s test.txt ] || echo "failed"
+failed
+
+test.txt is not empty, so the condition is not true, which means only the echo will execute.
+
+
+if [ -s test1.txt ]; then echo "file not empty"; fi
+doesn't print anything, test1.txt is not empty.
+
+
+
+
+test.txt is not empty:
+
+if [ -s test.txt ]; then echo "file not empty"; fi 
+file not empty
+
+
+test1 is empty:
+
+if [ -s test1.txt ]; then echo "file not empty"; fi 
+doesn't print anything
