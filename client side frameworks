@@ -1,0 +1,34 @@
+#ember.js
+console.log(Ember.version)
+
+#angular
+root elements
+const elements = getAllAngularRootElements();
+const version = elements[0].attributes['ng-version'];
+
+ng version
+console.log(version);
+
+#react js 
+const version = React.version;
+console.log(version);
+
+#vue.js
+const version = Vue.version;
+ console.log(version);
+
+//inspect vue elements
+Vue.config.devtools = true;
+
+
+#javascript libraries
+const getScripts = function() {
+const scripts = document.querySelectorAll('script'); //all instances of script
+
+//get sources atribute
+scripts.ForEach(script) => {
+if (script.src) {
+console.log(`i: ${script.src}`);
+}
+});
+};
