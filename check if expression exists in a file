@@ -1,0 +1,9 @@
+0empty.txt:
+1,2,3,4
+
+
+# if grep "bla" 0empty.txt; then echo "exists"; fi
+# if grep "10" 0empty.txt; then echo "exists"; fi
+# if grep "2" 0empty.txt; then echo "exists"; fi
+1,2,3,4,5
+exists
