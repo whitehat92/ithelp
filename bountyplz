@@ -1,0 +1,5 @@
+#not interesting after wayback
+waybackurls $1 | egrep -vi ".(jpg|jpeg|gif|css|tif|tiff|png|ttf|woff|woff2|ico|pdf|svg|txt|js)"
+
+#crtsh + wayback + notinteresting
+crtsh $1 | waybackurls | notinteresting
